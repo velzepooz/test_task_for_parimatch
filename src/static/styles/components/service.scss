@@ -1,0 +1,28 @@
+.service {
+  font-family: Circe Bold, Arial, Helvetica, sans-serif;
+  text-align: center;
+
+  color: #343638;
+
+  max-width: 264px;
+  margin-bottom: 50px;
+
+  &__img {
+    margin-bottom: 24px;
+  }
+
+  &__name {
+    font-size: 1.25rem;
+    line-height: 29px;
+    text-transform: capitalize;
+
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    font-family: Circe, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+}

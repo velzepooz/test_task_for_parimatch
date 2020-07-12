@@ -1,7 +1,16 @@
 .header {
-  position: relative;
 
-  max-height: 714px;
+  @media (min-width: 1024px) {
+    margin-bottom: 150px;
+  }
+
+  &__container {
+    position: relative;
+
+    @media (min-width: 1024px) {
+      height: 40vw;
+    }
+  }
 
   &__img {
     width: 100vw;
@@ -18,10 +27,9 @@
     padding: 40px 5%;
 
     width: 100vw;
-    height: 700px;
 
-    position: absolute;
-    top: 45%;
+    position: relative;
+    bottom: 40px;
     left: 0;
 
     background: linear-gradient(239.51deg, #30bef2 13.56%, #3e77f4 70.3%);
@@ -29,7 +37,11 @@
     border-radius: 20px 20px 0 0;
 
     @media (min-width: 360px) {
-      top: 50%;
+      top: 45%;
+    }
+
+    @media (min-width: 768px) {
+      top: 68%;
     }
 
     @media(min-width: 1024px) {
@@ -89,13 +101,13 @@
       font-size: 1.25rem;
     }
 
-    @media (min-width: 1600px) {
-      font-size: 1.8rem;
+    @media (min-width: 1024px) {
+      font-size: 1.6rem;
       margin-bottom: 5%;
     }
 
     @media (min-width: 1600px) {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
 
       margin-bottom: 7%;
     }

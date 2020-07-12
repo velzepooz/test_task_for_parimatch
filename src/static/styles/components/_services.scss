@@ -1,0 +1,29 @@
+.services {
+  text-align: center;
+
+  padding: 0 5%;
+
+  &__heading {
+    font-family: Circe Bold, Arial, Helvetica, sans-serif;
+    color: #343638;
+    font-size: 2.2rem;
+    line-height: 52px;
+    text-transform: capitalize;
+
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1550px;
+    margin: 0 auto;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
