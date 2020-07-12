@@ -3,11 +3,44 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE Template</title>
-    <link rel="stylesheet" href="style.scss">
-    <script type="module" src="main.js"></script>
+    <title>Ocean Blue</title>
+    <link rel="stylesheet" href="static/styles/reset.css">
+    <link rel="stylesheet" href="static/styles/main.scss">
+    <script
+      type="module"
+      src="main.js"
+      defer
+    >
+    </script>
   </head>
   <body>
-    <h1>FE Template</h1>
+    <header class="header">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="./img/main-img-large.png">
+        <img
+          class="header__img"
+          src="./img/main-img-mob.png"
+          alt="people loocking at laptops"
+          title="people loocking at laptops"
+        >
+      </picture>
+      <div class="header__bottom">
+        <img
+          class="header__logo"
+          src="./img/Logo.svg"
+          alt="logo"
+          title="logo"
+        >
+        <div class="header__description">
+          <span class="header__subtitle">A creative</span>
+          <h1 class="header__title">marketing agency</h1>
+          <p class="header__text">
+            Ocean Blue is a top marketing agency with its headquarters in Hong Kong. Our mission is to provide our clients with the best market expertise and solutions. At Ocean Blue, we stick to high standards and quality.
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+    </main>
   </body>
 </html>

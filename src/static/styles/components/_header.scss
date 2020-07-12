@@ -1,0 +1,168 @@
+.header {
+  position: relative;
+
+  max-height: 714px;
+
+  &__img {
+    width: 100vw;
+
+    @media(min-width: 1024px) {
+      width: 57vw;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__bottom {
+    padding: 40px 5%;
+
+    width: 100vw;
+    height: 700px;
+
+    position: absolute;
+    top: 45%;
+    left: 0;
+
+    background: linear-gradient(239.51deg, #30bef2 13.56%, #3e77f4 70.3%);
+    box-shadow: 0 20px 80px rgba(17, 58, 150, 0.3);
+    border-radius: 20px 20px 0 0;
+
+    @media (min-width: 360px) {
+      top: 50%;
+    }
+
+    @media(min-width: 1024px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 60vw;
+      height: 40vw;
+
+      padding: 40px 10%;
+
+      box-shadow: none;
+      border-radius: 0;
+      background: url("/img/main-background-div.svg") no-repeat top left;
+      background-size: cover;
+    }
+  }
+
+  &__description {
+    max-width: 470px;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto 18%;
+
+    @media (min-width: 768px) {
+      margin: 0 auto 7%;
+    }
+
+    @media (min-width: 1024px) {
+      width: 150px;
+      height: 52px;
+
+      margin: 0 0 5%;
+    }
+
+    @media (min-width: 1600px) {
+      width: 200px;
+      height: 52px;
+
+      margin: 0 0 20%;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    position: relative;
+
+    font-size: 1.13rem;
+    line-height: 29px;
+
+    margin-bottom: 5%;
+
+    @media (min-width: 360px) {
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 1.8rem;
+      margin-bottom: 5%;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 2.5rem;
+
+      margin-bottom: 7%;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 32%;
+      
+      content: "";
+
+      width: 180px;
+      height: 1px;
+
+      background-color: #fff;
+
+      @media (min-width: 768px) {
+        left: 28%;
+      }
+
+      @media (min-width: 1600px) {
+        left: 30%;
+        width: 324px;
+      }
+    }
+  }
+
+  &__title {
+    text-transform: capitalize;
+    font-family: Circe Bold, Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+    line-height: 59px;
+    white-space: nowrap;
+
+    margin-bottom: 3%;
+
+    @media (min-width: 360px) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 1024) {
+      font-size: 3.6rem;
+      margin-bottom: 5%;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 3.75rem;
+      margin-bottom: 5%;
+    }
+  }
+
+  &__text {
+    line-height: 24px;
+    font-size: 0.9rem;
+
+    @media (min-width: 360px) {
+      font-size: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 1.05rem;
+      line-height: 29px;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 1.25rem;
+      line-height: 29px;
+    }
+  }
+}
