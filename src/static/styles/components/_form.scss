@@ -3,8 +3,6 @@
   flex-direction: column;
   min-width: 300px;
 
-  font-family: Circe, Arial, Helvetica, sans-serif;
-  font-size: 16px;
   color: $general-font-color;
 
   &__underline {
@@ -35,7 +33,39 @@
   }
   
   &__input {
+    font-family: Circe, Arial, Helvetica, sans-serif;
+    font-size: 16px;
     height: 64px;
+    position: relative;
+
+    padding: 0 16px;
+
+    background: #fff;
+    box-shadow: 0 20px 30px rgba(17, 58, 150, 0.15);
+    border-radius: 4px;
+
+    margin-bottom: 0 16px;
+
+    &:focus {
+      + .form__underline:before,
+      + .form__underline:after {
+        width: 49%;
+      }
+    }
+
+    &::placeholder {
+      font-family: Circe, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+
+      color: #91979c;
+    }
+  }
+
+  &__textarea {
+    font-family: Circe, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: $general-font-color;
+
     position: relative;
 
     padding: 0 16px;
@@ -60,34 +90,10 @@
       color: #91979c;
     }
   }
+}
 
-  &__textarea {
-    font-family: Circe, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: $general-font-color;
-
-    position: relative;
-
-    padding: 16px;
-
-    background: #fff;
-    box-shadow: 0 20px 30px rgba(17, 58, 150, 0.15);
-    border-radius: 4px;
-
-    margin-bottom: 16px;
-
-    &:focus {
-      + .form__underline:before,
-      + .form__underline:after {
-        width: 49%;
-      }
-    }
-
-    &::placeholder {
-      font-family: Circe, Arial, Helvetica, sans-serif;
-      font-size: 16px;
-
-      color: #91979c;
-    }
-  }
+input:-webkit-autofill {
+  font-family: Circe, Arial, Helvetica, sans-serif;
+  -webkit-text-fill-color: #343638;
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
 }

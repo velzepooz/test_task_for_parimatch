@@ -11,7 +11,7 @@ const moveElipse = (e, position, element) => {
   const distY = e.clientY - position.y;
 
   element.style.transform = `
-    translate(${(distX) / 12}px, ${(-1 * distY) / 50}px)`;
+    translate(${(distX) / 40}px, ${(-1 * distY) / 50}px)`;
 };
 
 contactSection.addEventListener('mousemove', (e) => {
