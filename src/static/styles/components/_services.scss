@@ -3,12 +3,10 @@
 
   padding: 0 5%;
 
+  margin-bottom: 150px;
+
   &__heading {
-    font-family: Circe Bold, Arial, Helvetica, sans-serif;
-    color: #343638;
-    font-size: 2.2rem;
-    line-height: 52px;
-    text-transform: capitalize;
+    @extend %h2;
 
     margin-bottom: 50px;
   }

@@ -1,7 +1,13 @@
 @import "fonts";
+@import "./utils/utils";
+@import "./components/button.scss";
+@import "./components/form";
 @import "./components/header";
 @import "./components/services";
 @import "./components/service";
+@import "./components/about";
+@import "./components/contact.scss";
+@import "./components/footer.scss";
 
 * {
   box-sizing: border-box;
@@ -11,11 +17,11 @@ html {
   padding: 0;
   margin: 0;
   font-family: Circe, Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: $general-font-size;
   font-style: normal;
   font-weight: normal;
   color: #fff;
-  background-color: #fff;
+  background-color: $main-background-color;
 
   overflow-x: hidden;
 

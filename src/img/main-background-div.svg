@@ -8,7 +8,7 @@
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="20"/>
 <feGaussianBlur stdDeviation="40"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.0660937 0 0 0 0 0.229391 0 0 0 0 0.5875 0 0 0 0.3 0"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0660937 0 0 0 0 0.229391 0 0 0 0 0.5875 0 0 0 0.1 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>

@@ -2,7 +2,7 @@
   font-family: Circe Bold, Arial, Helvetica, sans-serif;
   text-align: center;
 
-  color: #343638;
+  color: $general-font-color;
 
   max-width: 264px;
   margin-bottom: 50px;
@@ -20,9 +20,6 @@
   }
 
   &__description {
-    font-family: Circe, Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    line-height: 24px;
+    @extend %p;
   }
-
 }

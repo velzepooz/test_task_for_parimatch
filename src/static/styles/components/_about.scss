@@ -1,0 +1,130 @@
+.about {
+  text-align: center;
+
+  align-items: center;
+
+  padding: 0 5px;
+
+  @media (min-width: 360px) {
+    padding: 0;
+    text-align: left;
+  }
+
+  @media (min-width: 1260px) {
+    padding: 0 10%;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 0 20%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1150px;
+
+    @media (min-width: 1260px) {
+      margin: 0 0 0 auto;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__elipse {
+    position: absolute;
+    top: 65%;
+    right: 71%;
+    width: 200px;
+    height: 200px;
+
+    @media (min-width: 360px) {
+      top: 69%;
+      right: 73%;
+    }
+
+    @media (min-width: 425px) {
+      top: 73%;
+      right: 78%;
+    }
+
+    @media (min-width: 768px) {
+      top: 80%;
+      right: 82%;
+    }
+  }
+
+  &__photo {
+    position: relative;
+
+    margin-bottom: 90px;
+
+    &::after {
+      position: absolute;
+      bottom: -36%;
+      right: 0%;
+      z-index: -1;
+      content: "";
+      width: 328px;
+      height: 508px;
+      background: url("/img/small-square.svg") no-repeat center center;
+      background-size: contain;
+
+      @media (min-width: 360px) {
+        bottom: -16%;
+        right: 0%;
+      }
+
+      @media (min-width: 425px) {
+        bottom: 7%;
+        right: 0%;
+      }
+
+      @media (min-width: 768px) {
+        bottom: 44%;
+        left: 60%;
+      }
+
+      @media (min-width: 1024px) {
+        background-image: url("/img/square.svg");
+        width: 400px;
+        height: 400px;
+        bottom: 51%;
+        left: 54%;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__description {
+    max-width: 328px;
+
+    @media (min-width: 1200px) {
+      order: -1;
+      max-width: 420px;
+    }
+  }
+
+  &__heading {
+    @extend %h2;
+    text-align: center;
+
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    @extend %p;
+
+    margin-bottom: 100px;
+
+    @media (min-width: 1200px) {
+      font-size: 1.25rem;
+      line-height: 29px;
+    }
+  }
+}
