@@ -4,8 +4,17 @@
 
   color: $general-font-color;
 
+  border-radius: 50px;
+  padding: 5px;
+
   max-width: 264px;
+  height: 300px;
   margin-bottom: 50px;
+  transition: box-shadow 300ms ease-in;
+
+  &:hover {
+    box-shadow: 0 20px 80px rgba(17, 58, 150, 0.3);
+  }
 
   &__img {
     margin-bottom: 24px;
