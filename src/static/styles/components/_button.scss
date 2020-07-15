@@ -12,7 +12,7 @@
   line-height: 29px;
   color: #fff;
 
-  transition: background 300ms linear;
+  transition: background $transition-duration linear;
 
   &::after {
     width: 100%;
@@ -24,7 +24,7 @@
     box-shadow: 0 20px 80px rgba(17, 58, 150, 0.3);
     border-radius: 4px;
     background: $form-color;
-    transition: opacity 0.5s ease-out;
+    transition: opacity $transition-duration ease-out;
     opacity: 0;
   }
 

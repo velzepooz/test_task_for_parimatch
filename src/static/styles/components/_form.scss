@@ -18,9 +18,9 @@
       bottom: 16px;
       position: absolute;
       background: $form-color;
-      transition: 0.2s ease all;
-      -moz-transition: 0.2s ease all;
-      -webkit-transition: 0.2s ease;
+      transition: $transition-duration ease all;
+      -moz-transition: $transition-duration ease all;
+      -webkit-transition: $transition-duration ease;
     }
 
     &:before {
