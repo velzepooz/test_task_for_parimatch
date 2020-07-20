@@ -1,0 +1,13 @@
+@mixin background-paralax {
+  width: 68vw;
+  height: 37vw;
+  background-image: url("/img/try1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  transform: skew(3deg);
+  background-position: 101% 0%;
+  background-size: 57vw;
+
+  clip-path: url(#rect);
+
+}

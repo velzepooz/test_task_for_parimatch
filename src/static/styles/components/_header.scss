@@ -1,6 +1,7 @@
 .header {
 
   margin-bottom: 50px;
+  overflow-x: hidden;
 
   @media (min-width: 1024px) {
     margin-bottom: 100px;
@@ -15,19 +16,40 @@
     }
   }
 
-  &__img-layer1,
-  &__img-layer2 {
+  &__img-parallax {
     display: none;
-    width: 100vw;
 
-    transition: transform $transition-duration ease;
-
-    @media(min-width: 1024px) {
+    @media (min-width: 1024px) {
       display: block;
-      width: 57vw;
       position: absolute;
-      top: 0;
-      right: 0;
+      
+      @include background-paralax;
+
+      right: -140px;
+    }
+
+    @media (min-width: 1200px) {
+      right: -175px;
+    }
+
+    @media (min-width: 1440px) {
+      right: -200px;
+    }
+
+    @media (min-width: 1700px) {
+      right: -230px;
+    }
+
+    @media (min-width: 1800px) {
+      right: -245px;
+    }
+
+    @media (min-width: 1900px) {
+      right: -265px;
+    }
+
+    @media (min-width: 2200px) {
+      right: -315px;
     }
   }
 
@@ -35,10 +57,7 @@
     width: 100vw;
 
     @media(min-width: 1024px) {
-      width: 57vw;
-      position: absolute;
-      top: 0;
-      right: 0;
+      display: none;
     }
   }
 
@@ -196,3 +215,5 @@
     }
   }
 }
+
+
