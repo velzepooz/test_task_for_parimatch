@@ -6,6 +6,14 @@ const elipse = document.querySelector('.about__elipse');
 const elipseWithDotPosition = elipseWithDot.getBoundingClientRect();
 const elipsePosition = elipse.getBoundingClientRect();
 
+const FIREFOX = /Firefox/i.test(navigator.userAgent);
+
+if (FIREFOX) {
+  const parallaxContainer = document.querySelector('.header__img-parallax');
+
+  parallaxContainer.style.backgroundPosition = '0 0';
+}
+
 const moveElipse = (e, position, element) => {
   const distX = e.clientX - position.x;
   const distY = e.clientY - position.y;
